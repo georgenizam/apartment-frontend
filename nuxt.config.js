@@ -13,19 +13,15 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   router: {
-    prefetchLinks: false
+    prefetchLinks: false,
   },
-  css: [],
+  css: ['~/assets/styles/main.scss'],
   plugins: [],
   components: true,
-  buildModules: [
-    '@nuxt/typescript-build',
-  ],
-  modules: [
-    '@nuxtjs/axios',
-  ],
+  buildModules: ['@nuxt/typescript-build'],
+  modules: ['@nuxtjs/axios'],
   axios: {
     baseURL: '/',
   },
   build: {},
-}
+};
