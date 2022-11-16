@@ -8,14 +8,16 @@
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
+    "strictPropertyInitialization": false,
     "noEmit": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
+    "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node", "types/v-click-outside.d.ts"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

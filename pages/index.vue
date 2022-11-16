@@ -1,18 +1,16 @@
 <template>
   <div class="container">
-    <p class="text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias architecto, at blanditiis
-      consectetur debitis deserunt doloribus, earum eos eveniet id mollitia nesciunt nisi officia
-      quibusdam quod totam velit, voluptates!
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet autem, blanditiis
+      dignissimos minus nulla!
     </p>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { Component, Vue } from 'vue-property-decorator';
 
-export default Vue.extend({
-  name: 'IndexPage',
-});
+@Component
+export default class Index extends Vue {}
 </script>
 <style lang="scss"></style>

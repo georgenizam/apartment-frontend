@@ -16,12 +16,15 @@ export default {
     prefetchLinks: false,
   },
   css: ['~/assets/styles/main.scss'],
-  plugins: [],
-  components: true,
-  buildModules: ['@nuxt/typescript-build'],
+  plugins: ['~/plugins/clickOutside'],
+  components: false,
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/style-resources', '@nuxtjs/svg'],
   modules: ['@nuxtjs/axios'],
   axios: {
     baseURL: '/',
   },
   build: {},
+  styleResources: {
+    scss: ['~/assets/styles/*.scss'],
+  },
 };
